@@ -1,0 +1,116 @@
+<!-- Creative & Helpful 404 HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(#0b0c10, #1f2833);
+      color: #c5c6c7;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 80px;
+      color: #66fcf1;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #c5c6c7;
+    }
+
+    a {
+      color: #45a29e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .search-box {
+      margin-top: 20px;
+    }
+
+    .search-box input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #45a29e;
+      color: #0b0c10;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    .stars {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* Floating stars */
+    .stars:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+    .stars:nth-child(2) { top: 40%; left: 50%; animation-delay: 1s; }
+    .stars:nth-child(3) { top: 70%; left: 80%; animation-delay: 2s; }
+    .stars:nth-child(4) { top: 30%; left: 70%; animation-delay: 1.5s; }
+    .stars:nth-child(5) { top: 60%; left: 25%; animation-delay: 0.5s; }
+
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="stars"></div>
+  <div class="stars"></div>
+  <div class="stars"></div>
+  <div class="stars"></div>
+
+  <h1>404</h1>
+  <p>Uh-oh! You seem to have drifted off-course.</p>
+  <p>The page you’re looking for doesn’t exist.</p>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search the site..." />
+    <button onclick="alert('Search is not active in this demo')">Search</button>
+  </div>
+
+  <p>Need help? Contact us at: 
+    <!--email_off-->23f1002487@ds.study.iitm.ac.in<!--/email_off-->
+  </p>
+
+  <p><a href="/">Return to Home Page</a></p>
+</body>
+</html>
